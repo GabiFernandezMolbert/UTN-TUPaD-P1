@@ -1,38 +1,38 @@
 """1) Escribir un programa que solicite la edad del usuario. Si el usuario es mayor de 18 años,
 deberá mostrar un mensaje en pantalla que diga “Es mayor de edad”."""
 #Se pide al usuario que ingrese su edad
-"""edad = int(input("Ingrese su edad "))
+edad = int(input("Ingrese su edad "))
 #Se ingresa una estructura condicional para decidir si es o no mayor de edad
 if edad >= 18 and edad < 110:
     print("Es mayor de edad")
 elif edad < 18 and edad > 0:
     print("Es menor de edad")
 else:
-    print("Ingrese una edad adecuada")"""
+    print("Ingrese una edad adecuada")
 
 """2) Escribir un programa que solicite su nota al usuario. Si la nota es mayor o igual a 6, deberá
 mostrar por pantalla un mensaje que diga “Aprobado”; en caso contrario deberá mostrar el
 mensaje “Desaprobado”."""
 #Se pide al usuario que ingrese su nota.
-"""nota = float(input("Ingrese su nota "))
+nota = float(input("Ingrese su nota "))
 #Se define la estructura condicional.
 if nota >= 6 and nota <= 10:
     print("Aprobado")
 elif nota < 6 and nota > 0:
     print("Desaprobado")
 else: 
-    print("Ingrese una nota válida.") """
+    print("Ingrese una nota válida.") 
 
 """3) Escribir un programa que permita ingresar solo números pares. Si el usuario ingresa un
 número par, imprimir por en pantalla el mensaje "Ha ingresado un número par"; en caso
 contrario, imprimir por pantalla "Por favor, ingrese un número par"."""
 #Se pide al usuario que ingrese un número par.
-"""number = int(input("Ingrese un número par "))
+number = int(input("Ingrese un número par "))
 #Se define la estructura condicional.
 if number % 2 == 0:
     print("Ha ingresado un número par")
-else: 
-    print("Por favor, ingrese un número par")"""
+else:
+    print("Por favor, ingrese un número par")
 
 """4) Escribir un programa que solicite al usuario su edad e imprima por pantalla a cuál de las
 siguientes categorías pertenece:
@@ -42,7 +42,7 @@ siguientes categorías pertenece:
 ● Adulto/a: mayor o igual que 30 años."""
 
 #Se pide al usuario que ingrese su edad.
-"""edad = int(input("Ingrese su edad "))
+edad = int(input("Ingrese su edad "))
 #Se define la estructura condicional para definir la categoría.
 if edad < 12 and edad > 0:
     print("Es Niño/a")
@@ -51,25 +51,25 @@ elif edad >= 12 and edad < 18:
 elif edad >= 18 and edad < 30: 
     print("Es Adulto/a Joven")
 else:
-    print("Es Adulto/a")"""
+    print("Es Adulto/a")
 
 """5) Escribir un programa que permita introducir contraseñas de entre 8 y 14 caracteres
 (incluyendo 8 y 14). Si el usuario ingresa una contraseña de longitud adecuada, imprimir por en
 pantalla el mensaje "Ha ingresado una contraseña correcta"; en caso contrario, imprimir por
 pantalla "Por favor, ingrese una contraseña de entre 8 y 14 caracteres"."""
 #Se pide al usuario que cree una contraseña.
-"""contrasena = input("Ingrese una contraseña entre 8 y 14")
+contrasena = input("Ingrese una contraseña entre 8 y 14")
 #Se crea una estructura condicional para establecer si la contraseña es correcta.
 if len(contrasena) >= 8 and len(contrasena) <= 14: 
     print("Ha ingresado una contraseña correcta")
 else:
-    print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")"""
+    print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
 
 """6) Escribir un programa que tome la lista numeros_aleatorios, calcule su moda, su mediana +
 y su media y las compare para determinar si hay sesgo positivo, negativo o no hay sesgo. 
 Imprimir el resultado por pantalla."""
 # Se importan las librerías necesarias.
-"""import random
+import random
 from statistics import mode, median, mean
 # Se generan los números aleatorios
 numeros_aleatorios = [random.randint(0,100) for i in range(50)]
@@ -83,21 +83,21 @@ if media > mediana and mediana > moda:
 elif media < mediana and mediana < moda: 
     print("Sesgo Negativo")
 else:
-    print("Sin Sesgo")"""
+    print("Sin Sesgo")
 
 """7) Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado
 termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por
 pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por
 pantalla."""
 #Se pide al usuario que ingrese una frase o palabra
-"""frase = input("Ingrese una frase o palabra ")
+frase = input("Ingrese una frase o palabra ")
 #Se accede a la última letra
 ultima_letra = frase[-1].lower()
 #Se crea la estructura condicional establecer que si finaliza en vocal se agregue un signo de exclamación.
 if ultima_letra == "a" or ultima_letra == "e" or ultima_letra == "i" or ultima_letra == "o" or ultima_letra == "u":
     print(f"{frase}!")
 else:
-    print(frase)"""
+    print(frase)
 
 """8) Escribir un programa que solicite al usuario que ingrese su nombre y el número 1, 2 o 3
 dependiendo de la opción que desee:
@@ -107,7 +107,7 @@ dependiendo de la opción que desee:
 El programa debe transformar el nombre ingresado de acuerdo a la opción seleccionada por el
 usuario e imprimir el resultado por pantalla."""
 #Se pide al usuario que ingrese su nombre y una opción
-"""nombre = input("Ingrese su nombre ")
+nombre = input("Ingrese su nombre ")
 opcion = int(input("Ingrese: 1. Si quiere su nombre en mayúscula, 2. Si quiere su nombre en minúscula, 3. Si quiere la primera letra en mayúscula "))
 
 #Se crea la estructura condicional
@@ -118,7 +118,7 @@ elif opcion == 2:
 elif opcion == 3:
     print(nombre.capitalize())
 else:
-    print("Opción Incorrecta. Vuelva a intentarlo.")"""
+    print("Opción Incorrecta. Vuelva a intentarlo.")
 
 """9) Escribir un programa que pida al usuario la magnitud de un terremoto, clasifique la
 magnitud en una de las siguientes categorías según la escala de Richter e imprima el resultado
@@ -132,7 +132,7 @@ débiles).
 ● Mayor o igual que 6 y menor que 7: "Muy Fuerte" (puede causar daños significativos).
 ● Mayor o igual que 7: "Extremo" (puede causar graves daños a gran escala)."""
 #Se pide al usuario que ingrese la magnitud del terremoto.
-"""magnitud = float(input("Ingrese la magnitud del terremoto, según la escala Richter. "))
+magnitud = float(input("Ingrese la magnitud del terremoto, según la escala Richter. "))
 #Se crea la estructura condicional para establecer la gravedad del terremoto.
 if magnitud < 0:
     print("Ingrese un Valor Válido")
@@ -148,7 +148,7 @@ else:
     elif magnitud >= 6 and magnitud < 7:
         print("Muy Fuerte (puede causar daños significativos)")
     else:
-        print("Extremo (puede causar graves daños a gran escala)")"""
+        print("Extremo (puede causar graves daños a gran escala)")
 
 """10) Utilizando la información aportada en la siguiente tabla sobre las estaciones del año,
 escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes
